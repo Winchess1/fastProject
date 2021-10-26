@@ -1,0 +1,23 @@
+
+<div class="cardCont">
+    <h2>
+        {{card?.city}}
+    </h2>
+    <p>
+        {{card?.date|date}}
+    </p>
+    <div class="shortInfo">
+       
+       
+        <p>
+            {{card?.weather?.description}}
+        </p>
+        <img [src] ="pictureURL+'10d@2x.png'">
+    </div>
+ 
+   
+    <p>
+        {{card?.tags}}
+    </p>
+
+</div>

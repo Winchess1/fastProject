@@ -1,0 +1,30 @@
+<div class="contLocation">
+    <form [formGroup]="LocationGroup" class="formLocation" (ngSubmit)="submit()">
+        <div class="loginHeader">
+            <h2>Enter your location</h2>
+        </div>
+        <div class="title">
+            <label for="title"></label>
+            <input id="title" type="text" formControlName="city" placeholder="city">
+            <span></span>
+        </div>
+        <div class="coordinates">
+            <label for="coordinates"></label>
+            <input id="coordinates" type="text" formControlName="coordinates" placeholder="Coordinates">
+        </div>
+        <div class="description">
+            <label for="description"></label>
+            <textarea id="description" rows="10" type="text" formControlName="description" placeholder="Description">
+            </textarea>
+        </div>
+        <div class="tags">
+            <label for="tags"></label>
+            <input id="tags" type="tags" formControlName="tags" placeholder="Tags">
+        </div>
+    
+        <div class="submit">
+            <button type="submit"  class="btn btn-sm btn-primary" [disabled]="!LocationGroup.valid">Submit</button>
+        </div>
+    
+    </form>
+</div>

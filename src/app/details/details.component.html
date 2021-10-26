@@ -1,0 +1,18 @@
+
+
+<app-location *ngIf="cardFormFlag"></app-location>
+
+
+
+<section class="cards" *ngIf="cards.length>1;else placeholder">
+    <ng-container *ngFor="let item of cards">
+        <app-cards [card] ="item"></app-cards>
+    </ng-container>
+
+</section>
+
+<ng-template #placeholder>
+
+    <p>Please enter new locations</p>
+    
+</ng-template>

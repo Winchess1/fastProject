@@ -1,0 +1,19 @@
+.cardCont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 220px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: gray;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.shortInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

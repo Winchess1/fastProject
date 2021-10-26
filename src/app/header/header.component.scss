@@ -1,0 +1,15 @@
+.headerCont{
+    width:100%;
+    height: 35px;
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+    .logout, .addnew{
+        color: white;
+        text-decoration: none;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+}

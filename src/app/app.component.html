@@ -1,0 +1,8 @@
+<div class="errorMessage" *ngIf="ApiService.errorMessage$ | async as Message">
+    {{Message |json}}
+</div>
+
+
+
+<app-header *ngIf="AuthserviceService.token"></app-header>
+<router-outlet></router-outlet>
